@@ -2,14 +2,16 @@
 
 ## Coming soon...
 
-Socket streaming :heavy_check_mark:
+Socket streaming  :heavy_check_mark:
 
 Streaming from file source:
 
-- CSV :x:
-- JSON :x:
-- PARQUET :x:
+- CSV  :x:
+- JSON  :x:
+- PARQUET  :x:
+
+Streaming for Kafka Topic  :x:
 
 Orchesctration
 
-- Airflow :x:
+- Airflow  :x:
