@@ -25,7 +25,7 @@ try:
             stream_words_df = socket_source_stream.select(explode(split(socket_source_stream.value, " ")).alias("words"))
             stream_words_count_df = stream_words_df.groupBy("words").count()
         except Exception as err:
-            print('Error in transformation:\n', sys.exc_info())
+            print('Error in transformation:\n', err, sys.exc_info())
         else:
             socket_sink_stream = stream_words_count_df.writeStream.queryName('sink_socket_streaming')\
             .format('console')\
@@ -38,12 +38,13 @@ try:
         print('\nStreaming Over.\n\n')
 
 except Exception as err:
-    print(f'\Error creating SparkSession: \n\n', sys.exc_info())
+    print(f'\Error creating SparkSession: \n\n', err, sys.exc_info())
 
 else:
     print('All went good.\n')
 
 finally:
+
     spark.stop()
     print('SparkSession stopped!')
 
