@@ -10,7 +10,7 @@ The text file is an extract of the defination for data engineering given by Joe 
 
 ## Project Objective
 
-To demonstrate a simple Spark socket streaming with aggregation using Pysaprk. The socket is a TCP socket session between a local server (`127.0.0.1:5011`) endpoint and a remote client endpoint (`127.0.0.1:<spark defines the port>`).
+To demonstrate a simple Spark socket streaming with aggregation using PySpark. The socket is a TCP socket session between a local server (`127.0.0.1:5011`) endpoint and a remote client endpoint (`127.0.0.1:<spark defines the port>`).
 
 ![spark_streaming](files/assets/spark_streaming.png) ![tcp_connection](files/assets/tcp_connection.png)
 
